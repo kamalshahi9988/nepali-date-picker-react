@@ -1,7 +1,16 @@
 {
-  "name": "nepali-date-picker",
+  "name": "nepali-dates-picker",
   "version": "0.1.0",
   "author": "Kamal Bahadur Shahi",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "Nepali",
+    "Date Picker",
+    "Nepali Date Picker",
+    "Pick Nepali Date"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
