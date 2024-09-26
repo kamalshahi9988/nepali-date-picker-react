@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 3px;
+  background-color: #ffffff;
+  width: 80px;
+  height: 40vh;
+  overflow: auto;
+  box-shadow: 3px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid #b3b2b2;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown .btn {
+  width: 100%;
+  margin: 2px 0px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background-color: rgb(252, 252, 252);
+  font-size: 15px;
+  font-weight: semibold;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+}
+.dropdown .btn:hover {
+  background-color: #f9f9f9;
+  color: rgb(129, 129, 129);
+}
+.border {
+  border-left: 1px solid #c9c6c6;
+  border-right: 1px solid #c9c6c6;
+  /* padding: 0px 15px !important; */
+}
+.title {
+  cursor: pointer;
+  padding: 0px 10px;
+}
+.title:hover {
+  color: rgb(84, 84, 84);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-btn {
+  color: rgba(207, 22, 22, 0.848) !important;
+  background-color: rgb(253, 225, 225) !important;
 }
